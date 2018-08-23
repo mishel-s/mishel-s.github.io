@@ -13,6 +13,9 @@ header {
 #blok_searchRequest, #select {
     min-width: 300px;
 }
+#blok_searchRequest:hover, #select:hover {
+    border: 2px solid #31bcfe;
+}
 #blok_searchRequest{
     height: 30px;
 }
