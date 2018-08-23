@@ -20,6 +20,10 @@ header {
     background-color: #333340;
     color: white;
 }
+#bt_sendRequest:hover {
+    color: #31bcfe;
+    border: 2px solid #31bcfe;
+}
 #error {
     display: none;
     justify-content: center;
