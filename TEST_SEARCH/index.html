@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokupon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <H1>ПОИСК</H1>
+        <div id="blockSearch" class="col search">
+            <input id="blok_searchRequest" name="request" value="" placeholder="Введите текст для поиска">
+            <select id="select">
+                <option value="not">Укажите поисковую систему</option>
+                <option value="google">google.com</option>
+                <option value="bing">bing.com</option>
+                <option value="ask">ask.com</option>
+            </select>
+            <input id="bt_sendRequest" type="submit" name="search" value="Искать">
+        </div>
+    </header>
+    <main id="error">
+        <div id="errorRequest">
+            <input type="button" value="OK">
+        </div>
+    </main>
+<script src="main.js"></script>
+</body>
+</html>
