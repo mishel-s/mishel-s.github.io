@@ -8,10 +8,13 @@ header {
     padding-right: 10px;
     border: 2px solid lightslategrey;
     border-radius: 5px;
-    min-height: 30px;
+    height: 35px;
 }
 #blok_searchRequest, #select {
     min-width: 300px;
+}
+#blok_searchRequest{
+    height: 30px;
 }
 #bt_sendRequest{
     background-color: #333340;
