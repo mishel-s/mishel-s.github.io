@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Pokupon</title>
+    <meta name="description" content="упрощенный поиск (поисковик) любых запросов">
+    <meta name="keywords" content="поиск, search, google, bing, ask, quastion, request, issue">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <H1>ПОИСК</H1>
-        <div id="blockSearch" class="col search">
-            <input id="blok_searchRequest" name="request" value="" placeholder="Введите текст для поиска">
-            <select id="select">
+        <div id="blockSearch" class="col-12 search">
+            <input id="blok_searchRequest"  name="request" value="" placeholder="Введите текст для поиска">
+            <select id="select" >
                 <option value="not">Укажите поисковую систему</option>
                 <option value="google">google.com</option>
                 <option value="bing">bing.com</option>
                 <option value="ask">ask.com</option>
             </select>
-            <input id="bt_sendRequest" type="submit" name="search" value="Искать">
+            <input id="bt_sendRequest"  type="submit" name="search" value="Искать">
         </div>
     </header>
     <main id="error">
         <div id="errorRequest">
-            <input type="button" value="OK">
+            <input type="button" value="OK" class="button">
         </div>
     </main>
-<script src="main.js"></script>
+<script src="main.js">
 </body>
 </html>

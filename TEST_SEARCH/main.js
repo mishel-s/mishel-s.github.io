@@ -7,6 +7,7 @@ let showHiddenBlockError = (errorMessage) => {
     blockErrorMessage.appendChild(createInput);
         createInput.type = 'button';
         createInput.value = 'Ok';
+        createInput.className = 'button';
         createInput.style.marginTop = '15px';
     createInput.addEventListener('click', () => {
         blockError.style.display = 'none';

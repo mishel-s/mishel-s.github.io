@@ -1,54 +1,91 @@
-header {
-    text-align: center;
-    font-size: 12px;
+@media (min-width: 290px) {
+
+    header {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #blockSearch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #blok_searchRequest, #select, #bt_sendRequest {
+        margin: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 2px solid lightslategrey;
+        border-radius: 5px;
+        height: 35px;
+    }
+
+    #blok_searchRequest, #select {
+        width: 250px;
+    }
+
+    #blok_searchRequest:hover, #select:hover {
+        border: 2px solid #31bcfe;
+    }
+
+    #blok_searchRequest {
+        height: 30px;
+    }
+
+    #bt_sendRequest, .button {
+        background-color: #333340;
+        color: white;
+        border-radius: 5px;
+        width: 70px;
+        height: 35px;
+    }
+
+    #bt_sendRequest:hover, .button:hover {
+        color: #31bcfe;
+        border: 2px solid #31bcfe;
+        border-radius: 5px;
+    }
+
+    #error {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: #31bcfe;
+        opacity: 0.9;
+    }
+
+    #errorRequest {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        width: 250px;
+        height: 150px;
+        border: 2px solid #333340;
+        border-radius: 10px;
+        padding: 5px;
+    }
 }
-#blok_searchRequest, #select, #bt_sendRequest {
-    margin: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 2px solid lightslategrey;
-    border-radius: 5px;
-    height: 35px;
-}
-#blok_searchRequest, #select {
-    min-width: 300px;
-}
-#blok_searchRequest:hover, #select:hover {
-    border: 2px solid #31bcfe;
-}
-#blok_searchRequest{
-    height: 30px;
-}
-#bt_sendRequest{
-    background-color: #333340;
-    color: white;
-}
-#bt_sendRequest:hover {
-    color: #31bcfe;
-    border: 2px solid #31bcfe;
-}
-#error {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: #31bcfe;
-    opacity: 0.8;
-}
-#errorRequest {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    border: 2px solid #333340;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    background-color: white;
-    color: black;
+
+@media (min-width: 680px) {
+    #blockSearch {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #blok_searchRequest, #select {
+        width: 300px;
+    }
+    #errorRequest {
+        width: 300px;
+    }
 }
