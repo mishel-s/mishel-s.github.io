@@ -22,7 +22,6 @@
 
     #blok_searchRequest, #select {
         width: 250px;
-        -webkit-width: 250px;
     }
 
     #blok_searchRequest:hover, #select:hover {
