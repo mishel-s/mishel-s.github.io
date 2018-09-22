@@ -32,9 +32,14 @@ let checkSearchSystem = (searchSystem, userRequest) => {
 };
 let validateSearch = (searchSystem, userRequest, blockError) => {
     let pattern = ! /\S/.test(userRequest);// true, если в строке нет "не пробелов"
+    let pattern2 = /&/g.test(userRequest);// true, если в строке есть "&"
     if(userRequest == "" || pattern == true) {
         let errorMessage = 'Пожалуйста, введите поисковый запрос!';
         showHiddenBlockError(errorMessage);
+    } else if ( pattern2 == true) {
+        userRequest = userRequest.replace(/&/g, "+");
+        console.log(userRequest);
+        return checkSearchSystem(searchSystem, userRequest, blockError);
     } else {
         return checkSearchSystem(searchSystem, userRequest, blockError);
     }
@@ -43,6 +48,7 @@ let sendRequest = () => {
     let searchSystem = document.getElementById('select').value;
     let userRequest = document.getElementById('blok_searchRequest').value;
     let requestLink = validateSearch(searchSystem, userRequest);
+
     if(requestLink !== undefined) {
         window.open(requestLink);
     }
