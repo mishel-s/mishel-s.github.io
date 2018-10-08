@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>IOtechnologies</title>
+</head>
+<body>
+    <div class="background">
+        <div class="signIn__normal__left">
+            <div class="signIn__normal__left__info">
+                <div class="signIn__normal__left__info__name">
+                    <img src="img/logo.png" alt="logo" class="signIn__normal__left__info__name_logo" />Technologies
+                </div>
+                <div class="signIn__normal__left__info_text">
+                    Get how-to help and instructions or specific features in
+                </div>
+                <div class="signIn__normal__left__info__buttons">
+                    <div class="text__bt_left">
+                        <a href="https://help.onthe.io/media-knowledge-base">
+                            <span>HELP CENTER</span>
+                            <button class="signIn__normal__left__info_buttons_bt"></button>
+                        </a>
+                    </div>
+                    <span>or</span>
+                    <div class="text__bt_right">
+                        <a href="https://iotechnologies.com/contact">
+                            <span>SUPPORT</span>
+                            <button class="signIn__normal__left__info_buttons_bt"></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <svg class="svg" width="900" height="700">
+                <symbol id="s-crown">
+                    <path d="M 0,150 L 470,300 L 790,420"
+                          fill="none" stroke="rgb(40,130,222)" stroke-width="2"/>
+                    <path d="M 0,300 L 470,400 L 790,490"
+                          fill="none" stroke="rgb(40,100,222)" stroke-width="2"/>
+                    <path d="M 0,320 L 350,500 L 450,540 L 700,600
+                             M 0,420 L 450,600
+                             M 0,450 L 300,600"
+                          fill="none" stroke="rgb(84,73,182)" stroke-width="2"/>
+                </symbol>
+                <use xlink:href="#s-crown" x="5" y="7"/>
+            </svg>
+        </div>
+        <div class="signIn__normal__right">
+            <div id="mainForm" class="signIn__normal__right__form">
+                <div class="signIn__normal__right__form__title">
+                    <span class="signIn__normal__right__form__title_main">Welcome back</span>
+                    <p class="signIn__normal__right__form__title_second">Sign in to continue IO Technologies.</p>
+                </div>
+                <div id="info" class="signIn__normal__right__form__info">
+                    <div id="emailTooltip" class="Tooltip popup-left-corner"></div>
+                    <input id="email" class="signIn__normal__right__form__info_input" type="text" placeholder="Your email" onchange="checkEmail()"/>
+                    <div id="passwordTooltip" class="Tooltip popup-left-bottom-corner"></div>
+                    <input id="password" class="signIn__normal__right__form__info_input" type="password" placeholder="Password"/>
+                </div>
+                <div class="signIn__normal__right__form__confirm">
+                    <a>
+                        <span>LOG IN
+                        <svg onclick="showMainForm()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve" width="15px" height="15px">
+                            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" fill="#646c85"/>
+                            <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                        </svg></span>
+                    </a>
+                    <button class="signIn__normal__right__form__button" onclick="logIn()"></button>
+                </div>
+                <div class="signIn__normal__right__form__resetPassword">
+                    <span>Forgot your password?</span>
+                    <span class="signIn__normal__right__form__resetPassword_link" onclick="showForgotPassword()">Reset</span>
+                </div>
+            </div>
+            <div id="forgotPassword" class="signIn__normal__right__form">
+                <svg onclick="showMainForm()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve" width="30px" height="30px">
+                    <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" fill="#646c85"/>
+                    <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                </svg>
+                <div class="signIn__normal__right__form__title">
+                    <span class="signIn__normal__right__form__title_main">Forgot password?</span>
+                </div>
+                <div id="info" class="signIn__normal__right__form__info">
+                    <div id="emailTooltipForgotPassword" class="Tooltip popup-left-corner"></div>
+                    <input id="emailForgotPassword" class="signIn__normal__right__form__info_input" type="text" placeholder="Enter your email" onchange="checkEmailForgotPassword()"/>
+                </div>
+                <div class="signIn__normal__right__form__confirm">
+                    <a href="https://iotechnologies.com/"><span>SEND ME INSTRUCTIONS</span></a>
+                    <button class="signIn__normal__right__form__button" ></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('stylesElems.css');
+
+
+body{
+    display: flex;
+    margin: 0;
+    background-color: #10172f;
+    width: 100%;
+    height: 100vh;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #10172f;
+    z-index: 199;
+}
+
+.signIn__normal__left, .signIn__normal__right {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn__normal__left {
+    width: 60%;
+    height: 180%;
+    position: fixed;
+    right: 43%;
+    top: -40%;
+    z-index: 101;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+    background: -moz-linear-gradient( 113deg, rgb(84,73,182) 10%, rgb(107,168,220) 60%);
+    background: -webkit-linear-gradient( 113deg, rgb(84,73,182) 10%, rgb(107,168,220) 60%);
+    background: -ms-linear-gradient( 113deg, rgb(84,73,182) 10%, rgb(107,168,220) 60%);
+}
+
+.signIn__normal__right {
+    left: 50%;
+    width: 50%;
+    z-index: 99;
+}
+
+.signIn__normal__left__info, .signIn__normal__right__form {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn__normal__left__info__name {
+    font-family: MuseoSansCyrl300;
+    font-size: 25px;
+    color: rgba( 255, 255, 255, 0.42 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn__normal__left__info__name_logo {
+    height: 30px;
+    padding-right: 10px;
+}
+
+.signIn__normal__left__info_text {
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.signIn__normal__left__info__buttons {
+    position: relative;
+    padding-top: 20px;
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    z-index: 56;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signIn__normal__left__info_buttons_bt {
+    border-radius: 6px;
+    border: none;
+    box-shadow: 2px 3.464px 13px 0px rgb( 0, 0, 0 );
+    font-family: HelveticaNeueCyrMedium;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba( 255, 255, 255, 0.259 );
+    opacity: 0.651;
+    width: 100%;
+    height: 100%;
+}
+
+.text__bt_left, .text__bt_right {
+    position: relative;
+    font-family: HelveticaNeueCyrMedium;
+    font-size: 12px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text__bt_left:hover, .text__bt_right:hover {
+    transform: scale(1.1);
+}
+
+.text__bt_left a, .text__bt_right a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.text__bt_left span, .text__bt_right span {
+    position: absolute;
+    left: 15%;
+    top: 15px;
+    font-family: 'HelveticaNeueCyrMedium';
+    color: white;
+}
+
+.text__bt_right span {
+    left: 26%;
+}
+
+svg {position: fixed; top: 0; opacity: 0.2;}
+
+.signIn__normal__right__form {
+    width: 45%;
+    height: 60%;
+    align-items: start;
+}
+
+.signIn__normal__right__form__title_main {
+    font-family: 'HelveticaNeueCyrMedium';
+    color: white;
+    font-size: 28px;
+}
+
+.signIn__normal__right__form__title_second {
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    color: #646c85;
+    margin-top: 5px;
+}
+
+.signIn__normal__right__form__info {
+    width: 100%;
+}
+
+.signIn__normal__right__form__confirm a {
+    text-decoration: none;
+    height: 100px;
+}
+
+.signIn__normal__right__form__button {
+    border-radius: 7px;
+    background-image: -moz-linear-gradient( -14deg, rgb(18,126,249) 0%, rgb(84,195,254) 100%);
+    background-image: -webkit-linear-gradient( -14deg, rgb(18,126,249) 0%, rgb(84,195,254) 100%);
+    background-image: -ms-linear-gradient( -14deg, rgb(18,126,249) 0%, rgb(84,195,254) 100%);
+    opacity: 0.82;
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-family: Myriad Pro;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.signIn__normal__right__form__resetPassword {
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    color: #646c85;
+    padding-top: 40px;
+}
+
+.signIn__normal__right__form__resetPassword .signIn__normal__right__form__resetPassword_link {
+    color: #3e93e3;
+}
+
+.signIn__normal__right__form__resetPassword .signIn__normal__right__form__resetPassword_link:hover {
+    text-decoration: underline;
+}
+
+.signIn__normal__right__form__confirm {
+    position: relative;
+    width: 100%;
+}
+
+.signIn__normal__right__form__confirm:hover {
+    transform: scale(1.1);
+}
+
+.signIn__normal__right__form__confirm span {
+    position: relative;
+    left: 37%;
+    top: 45px;
+    z-index: 1;
+    font-family: 'HelveticaNeueCyrMedium';
+    color: white;
+}
+
+.signIn__normal__right__form__confirm svg {
+    position: absolute;
+    top: 10%;
+    left: 120%;
+    opacity: 1;
+}
+
+.signIn__normal__right__form__confirm path{
+    fill: white;
+}
+
+.signIn__normal__right__form__info_input {
+    background-color: #10172f;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #646c85;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+}
+
+.signIn__normal__right__form__info_input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.signIn__normal__right__form__info_input::-webkit-input-placeholder {font-family: 'HelveticaNeueCyrMedium'; font-size: 17px; color:#646c85; font-weight: normal;}
+.signIn__normal__right__form__info_input::-moz-placeholder          {font-family: 'HelveticaNeueCyrMedium'; font-size: 17px; color:#646c85; font-weight: normal;}/* Firefox 19+ */
+.signIn__normal__right__form__info_input:-moz-placeholder           {font-family: 'HelveticaNeueCyrMedium'; font-size: 17px; color:#646c85; font-weight: normal;}/* Firefox 18- */
+.signIn__normal__right__form__info_input:-ms-input-placeholder      {font-family: 'HelveticaNeueCyrMedium'; font-size: 17px; color:#646c85; font-weight: normal;}
+
+#forgotPassword {
+    display: none;
+}
+
+#forgotPassword #info {
+    padding-top: 50px;
+}
+
+#forgotPassword svg {
+    transform: rotate(180deg);
+    top: 5%;
+    opacity: 1;
+}
+
+#forgotPassword svg:hover path{
+    fill: white;
+}
+
+#forgotPassword #email {
+    margin-bottom: 0;
+}
+
+#forgotPassword span {
+    left: 15%;
+}
